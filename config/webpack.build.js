@@ -14,6 +14,13 @@ const path = require("path");
 const entryFolder = 'dev';
 const entryPath = path.resolve(__dirname, `../${entryFolder}`);
 
+const buildTarget = env.TARGET || 'local';
+
+// change the base URL depends on your deployment URL
+// domain.com or sub.domain.com => use "/"
+// domain.com/your-site => use "/your-site"
+const baseURL = buildTarget === 'local' ? '/' : `/${packageInfo.repository.name}`;
+
 module.exports = merge(server, {
     mode: 'production',
     devtool: false,
@@ -23,7 +30,7 @@ module.exports = merge(server, {
 
     output: {
         path: paths.build,
-        publicPath: '/single-web-page-boilerplate',
+        publicPath: baseURL,
         filename: 'js/[name].[contenthash].bundle.js',
     },
     module: {

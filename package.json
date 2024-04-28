@@ -8,7 +8,8 @@
   "homepage": "https://github.com/phucbm/single-web-page-boilerplate",
   "repository": {
     "type": "git",
-    "url": "git@github.com:phucbm/single-web-page-boilerplate"
+    "url": "git@github.com:phucbm/single-web-page-boilerplate",
+    "name": "single-web-page-boilerplate"
   },
   "author": {
     "name": "phucbm",
@@ -23,7 +24,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.build.js"
+    "build": "webpack --config config/webpack.build.js",
+    "ghp-build": "cross-env TARGET=ghp webpack --config config/webpack.build.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
