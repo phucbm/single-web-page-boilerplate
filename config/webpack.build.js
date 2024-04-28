@@ -23,7 +23,7 @@ module.exports = merge(server, {
 
     output: {
         path: paths.build,
-        publicPath: '/',
+        publicPath: '/single-web-page-boilerplate',
         filename: 'js/[name].[contenthash].bundle.js',
     },
     module: {
