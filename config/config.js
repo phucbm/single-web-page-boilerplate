@@ -29,7 +29,7 @@ const path = require('path');
 const paths = {
     // Source files
     src: path.resolve(__dirname, '../src'),
-    entry: path.resolve(__dirname, '../src/_index.js'),
+    entry: path.resolve(__dirname, '../site/index.js'),
 
     // Production build files
     dist: path.resolve(__dirname, '../dist'),
@@ -38,7 +38,7 @@ const paths = {
     build: path.resolve(__dirname, '../build'),
 
     // Static files that get copied to build folder
-    public: path.resolve(__dirname, '../public'),
+    public: path.resolve(__dirname, '../site/public'),
 };
 
 
