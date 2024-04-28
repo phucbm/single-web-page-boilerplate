@@ -1,8 +1,14 @@
 name: GitHub Pages Deploy
+# How this workflow works?
 # Every time you push to the "main" branch
 # GitHub Actions will build your project to the "gh-pages" branch
 # Then deploy a GitHub page from that branch
 # Edit the branch name or npm command to fit your project
+
+# Setup GitHub Pages
+# Go to your repo Settings > Pages
+# Select Source: Deploy from a branch
+# Select "gh-pages" branch at "/(root)", then Save
 
 on:
   push:
