@@ -19,6 +19,8 @@ on:
 
 jobs:
   deploy:
+    permissions:
+      contents: write
     name: Build your site
     runs-on: ubuntu-latest
     steps:
