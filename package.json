@@ -2,7 +2,6 @@
   "name": "my-web-page",
   "outputFilename": "my-web-page",
   "prettyName": "My Single Web Page",
-  "codeName": "MySingleWebPage",
   "version": "0.0.1",
   "description": "Lorem ipsum dolor sit amet",
   "homepage": "https://github.com/phucbm/single-web-page-boilerplate",
@@ -25,7 +24,7 @@
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.build.js",
-    "ghp-build": "cross-env TARGET=ghp webpack --config config/webpack.build.js"
+    "ghp-build": "cross-env BASE=/single-web-page-boilerplate webpack --config config/webpack.build.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
