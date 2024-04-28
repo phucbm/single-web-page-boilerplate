@@ -1,43 +1,32 @@
-#  JavaScript x Webpack (Library Boilerplate)
+# Single Web Page Boilerplate
 
-A starter pack to develop your JS library with:
+A boilerplate to quickly build a single web page with:
 - ⚙️ ES6 module
 - ⚙️ Webpack with HRM ready
 - ⚙️ SCSS
-- ⚙️ Separated dev and public server
+- ⚙️ Automation to deploy to GitHub Pages on every push
 
-Output formats:
-- ✅ UMD file with minified and unminified versions.
-- ✅ Module file for publishing to `npm`.
-
-> CSS file will not be included in the production build.
 
 ## Todos
 
-1. Update `package.json` with your library names.
-2. Library script start with `/src/_index.js`, **do not rename this file**.
-3. Create your dev site in folder `/dev`.
+1. Update `package.json` with your project info.
+2. Start your code with `/src/_index.js` **(do not rename this file)**.
+3. Manage your site in folder `/dev`.
 
 ## Deployment
 
-```shell the packages
+```bash
 # Install
 npm i
 
 # Run dev server
 npm run dev
 
-# Generate UMD and module version
-npm run prod
-
-# Build production site (e.g. for Netlify host)
+# Build production site with default path "/"
 npm run build
+
+# Build using GitHub Actions requires a different path
+# domain.com or sub.domain.com => use "/"
+# domain.com/your-site => use "/your-site"
+npm run ghp-build
 ```
-
----
-
-Libraries that used this boilerplate:
-
-- [Easy Tab & Accordion (ETA)](https://github.com/viivue/easy-tab-accordion)
-- [Easy Popup](https://github.com/viivue/easy-popup)
-- [Easy Select](https://github.com/viivue/easy-select)
