@@ -1,14 +1,14 @@
 {
-  "name": "your-project-name",
-  "outputFilename": "your-project-name",
-  "prettyName": "MyInstance - Webpack Library Boilerplate",
-  "codeName": "MyInstance",
+  "name": "my-web-page",
+  "outputFilename": "my-web-page",
+  "prettyName": "My Single Web Page",
+  "codeName": "MySingleWebPage",
   "version": "0.0.1",
-  "description": "A boilerplate to build JavaScript library with ES6 module and UMD version.",
-  "homepage": "https://github.com/phucbm/js-webpack-boilerplate",
+  "description": "Lorem ipsum dolor sit amet",
+  "homepage": "https://github.com/phucbm/single-web-page-boilerplate",
   "repository": {
     "type": "git",
-    "url": "git@github.com:phucbm/js-webpack-boilerplate"
+    "url": "git@github.com:phucbm/single-web-page-boilerplate"
   },
   "author": {
     "name": "phucbm",
@@ -19,16 +19,11 @@
     "javascript",
     "es6"
   ],
-  "main": "./dist/your-project-name.module.js",
+  "main": "./src/_index.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.build.js",
-    "prod-umd": "cross-env TARGET=umd webpack --config config/webpack.prod.js",
-    "prod-umd-min": "cross-env TARGET=umd MIN=yes webpack --config config/webpack.prod.js",
-    "prod-module": "cross-env TARGET=module MIN=yes webpack --config config/webpack.prod.js",
-    "prod": "npm run prod-umd && npm run prod-umd-min && npm run prod-module",
-    "publish": "npm run prod & npm publish"
+    "build": "webpack --config config/webpack.build.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",

@@ -6,7 +6,7 @@ import 'honcau';
 import './style.scss';
 
 // source script
-import '@/_index';
+import {MySingleWebPage} from '@/_index'
 
 // import package info
 const packageInfo = require('../package.json');
@@ -14,4 +14,4 @@ const packageInfo = require('../package.json');
 /**
  * Lib usage
  */
-MyInstance.init();
+new MySingleWebPage();
