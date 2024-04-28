@@ -1,1 +1,23 @@
 /* Stylesheet */
+@import "fonts";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  color: $color-text;
+  font-size: $font-size;
+  font-family: $font-family;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: $page-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}

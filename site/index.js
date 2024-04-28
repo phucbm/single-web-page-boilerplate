@@ -1,6 +1,5 @@
 // public styles
 import '@viivue/atomic-css';
-import 'honcau';
 
 // private style
 import './css/style.scss';
