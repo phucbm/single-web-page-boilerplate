@@ -10,8 +10,8 @@ A boilerplate to quickly build a single web page with:
 ## Todos
 
 1. Update `package.json` with your project info.
-2. Start your code with `/src/_index.js` **(do not rename this file)**.
-3. Manage your site in folder `/dev`.
+2. Start your code with `/site/index.js` **(do not rename this file)**.
+3. Manage your site in folder `/site`.
 
 ## Deployment
 

@@ -1,6 +1,5 @@
 {
   "name": "my-web-page",
-  "outputFilename": "my-web-page",
   "prettyName": "My Single Web Page",
   "version": "0.0.1",
   "description": "Lorem ipsum dolor sit amet",
@@ -23,7 +22,7 @@
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.build.js",
-    "ghp-build": "cross-env BASE=/single-web-page-boilerplate webpack --config config/webpack.build.js"
+    "ghp-build": "cross-env BASE=/single-web-page-boilerplate/ webpack --config config/webpack.build.js"
   },
   "devDependencies": {
     "@viivue/atomic-css": "^1.1.7",
